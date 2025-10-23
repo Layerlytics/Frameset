@@ -1,16 +1,419 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My Website</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Website using Frameset Tag</title>
+
+  <!-- Prism.js -->
+  <link href="vendors/css/prism-one-dark.css" rel="stylesheet" />
+  <link href="vendors/css/prism-line-numbers.css" rel="stylesheet" />
+  <script src="vendors/js/prism.min.js"></script>
+  <script src="vendors/js/prism-markup.min.js"></script>
+  <script src="vendors/js/prism-line-numbers.min.js"></script>
+
+  <!-- Clipboard.js -->
+  <script src="vendors/js/clipboard.min.js"></script>
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<frameset rows="20%,80%" border="2">
+
+<body>
+  <div class="button-div"><button onclick="downloadSource()" class="pref-button">
+      <span class="pref-spark__container">
+        <span class="pref-spark"></span>
+      </span>
+      <span class="pref-backdrop"></span>
+      <span class="pref-text">
+        Download Source Code
+      </span>
+    </button></div>
+
+  <div class="wrap">
+    <div class="code-demo-container">
+      <!-- Code Panel -->
+      <section class="panel code-panel height-auto" aria-label="Code panel">
+        <div class="title-bar" role="banner">
+          <div class="dots" aria-hidden="true">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+
+          <div class="file-info" title="table.html">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML icon">
+            <strong>frameset.html</strong>
+          </div>
+
+          <!-- ✅ Premium Copy Button with Fixed Animation -->
+          <button class="copy-btn" data-clipboard-target="#myCode">
+            <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Copy</span>
+          </button>
+        </div>
+
+        <pre class="code-block line-numbers"><code id="myCode" class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;My Website&lt;/title&gt;
+&lt;/head&gt;
+&lt;frameset rows="20%,80%" border="2"&gt;
     
-    <frame src="header.html" name="header">
+    &lt;frame src="header.html" name="header"&gt;
 
-    <frameset cols="20%,80%" border="2">
-        <frame src="menu.html" name="menu">
-        <frame src="Menu/home.html" name="main">
-    </frameset>
+    &lt;frameset cols="20%,80%" border="2"&gt;
+        &lt;frame src="menu.html" name="menu"&gt;
+        &lt;frame src="Menu/home.html" name="main"&gt;
+    &lt;/frameset&gt;
 
-</frameset>
+&lt;/frameset&gt;
+&lt;/html&gt;
+</code></pre>
+
+      </section>
+      <section class="panel code-panel height-auto" aria-label="Code panel">
+        <div class="title-bar" role="banner">
+          <div class="dots" aria-hidden="true">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+
+          <div class="file-info" title="table.html">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML icon">
+            <strong>header.html</strong>
+          </div>
+
+          <!-- ✅ Premium Copy Button with Fixed Animation -->
+          <button class="copy-btn" data-clipboard-target="#myCode">
+            <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Copy</span>
+          </button>
+        </div>
+
+        <pre class="code-block line-numbers"><code id="myCode" class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Header&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style="background-color:yellow; text-align:center; font-size:24px;"&gt;
+
+    &lt;table align="center"&gt;
+        &lt;tr&gt;
+            &lt;td&gt;&lt;img src="assets/img/logo.png" alt="Website Logo" height="60"&gt;&lt;/td&gt;
+            &lt;td&gt;&lt;h1 style="margin:0;"&gt;Website Name&lt;/h1&gt;&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+      </section>
+
+      <section class="panel code-panel height-auto" aria-label="Code panel">
+        <div class="title-bar" role="banner">
+          <div class="dots" aria-hidden="true">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+
+          <div class="file-info" title="table.html">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML icon">
+            <strong>menu.html</strong>
+          </div>
+
+          <!-- ✅ Premium Copy Button with Fixed Animation -->
+          <button class="copy-btn" data-clipboard-target="#myCode">
+            <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Copy</span>
+          </button>
+        </div>
+
+        <pre class="code-block line-numbers"><code id="myCode" class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Menu&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style="background-color:#B5E61D; font-size:20px;"&gt;
+    &lt;b&gt;&lt;a href="Menu/home.html" target="main"&gt;Home&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+    &lt;b&gt;&lt;a href="Menu/about.html" target="main"&gt;About Us&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+    &lt;b&gt;&lt;a href="Menu/signup.html" target="main"&gt;Signup&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+    &lt;b&gt;&lt;a href="Menu/signin.html" target="main"&gt;Signin&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+    &lt;b&gt;&lt;a href="Menu/logout.html" target="main"&gt;Logout&lt;/a&gt;&lt;/b&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+
+      </section>
+
+      <section class="panel code-panel height-auto" aria-label="Code panel">
+        <div class="title-bar" role="banner">
+          <div class="dots" aria-hidden="true">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+
+          <div class="file-info" title="table.html">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML icon">
+            <strong>menu/home.html</strong>
+          </div>
+
+          <!-- ✅ Premium Copy Button with Fixed Animation -->
+          <button class="copy-btn" data-clipboard-target="#myCode">
+            <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Copy</span>
+          </button>
+        </div>
+
+        <pre class="code-block line-numbers"><code id="myCode" class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Home&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style="background-color:#C8BFE7; text-align:center; font-size:22px;"&gt;
+    &lt;h2&gt;Welcome to Home Page&lt;/h2&gt;
+    &lt;p&gt;This is the main content area for the Home page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+
+
+      </section>
+
+      <section class="panel code-panel height-auto" aria-label="Code panel">
+        <div class="title-bar" role="banner">
+          <div class="dots" aria-hidden="true">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+
+          <div class="file-info" title="table.html">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML icon">
+            <strong>menu/about.html</strong>
+          </div>
+
+          <!-- ✅ Premium Copy Button with Fixed Animation -->
+          <button class="copy-btn" data-clipboard-target="#myCode">
+            <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Copy</span>
+          </button>
+        </div>
+
+        <pre class="code-block line-numbers"><code id="myCode" class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;About Us&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style="background-color:#C8BFE7; text-align:center; font-size:22px;"&gt;
+   &lt;h2&gt;About Us Page&lt;/h2&gt;
+   &lt;p&gt;Some details about us...&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+
+
+
+      </section>
+
+      <section class="panel code-panel height-auto" aria-label="Code panel">
+        <div class="title-bar" role="banner">
+          <div class="dots" aria-hidden="true">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+
+          <div class="file-info" title="table.html">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML icon">
+            <strong>menu/logout.html</strong>
+          </div>
+
+          <!-- ✅ Premium Copy Button with Fixed Animation -->
+          <button class="copy-btn" data-clipboard-target="#myCode">
+            <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Copy</span>
+          </button>
+        </div>
+
+        <pre class="code-block line-numbers"><code id="myCode" class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Logout&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style="background-color:#C8BFE7; text-align:center; font-size:22px;"&gt;
+    &lt;h2&gt;Logout Page&lt;/h2&gt;
+    &lt;p&gt;You have successfully logged out. Thank you for visiting!&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+
+
+
+
+      </section>
+
+      <section class="panel code-panel height-auto" aria-label="Code panel">
+        <div class="title-bar" role="banner">
+          <div class="dots" aria-hidden="true">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+
+          <div class="file-info" title="table.html">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML icon">
+            <strong>menu/signin.html</strong>
+          </div>
+
+          <!-- ✅ Premium Copy Button with Fixed Animation -->
+          <button class="copy-btn" data-clipboard-target="#myCode">
+            <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Copy</span>
+          </button>
+        </div>
+
+        <pre class="code-block line-numbers"><code id="myCode" class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Signin&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style="background-color:#C8BFE7; text-align:center; font-size:22px;"&gt;
+    &lt;h2&gt;Signin Page&lt;/h2&gt;
+    &lt;p&gt;This is the Signin page where existing users can log in to their account.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+
+
+
+
+
+      </section>
+
+      <section class="panel code-panel height-auto" aria-label="Code panel">
+        <div class="title-bar" role="banner">
+          <div class="dots" aria-hidden="true">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+
+          <div class="file-info" title="table.html">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML icon">
+            <strong>menu/signup.html</strong>
+          </div>
+
+          <!-- ✅ Premium Copy Button with Fixed Animation -->
+          <button class="copy-btn" data-clipboard-target="#myCode">
+            <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+            <svg class="check-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M5 13l4 4L19 7"></path>
+            </svg>
+            <span>Copy</span>
+          </button>
+        </div>
+
+        <pre class="code-block line-numbers"><code id="myCode" class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Signup&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style="background-color:#C8BFE7; text-align:center; font-size:22px;"&gt;
+    &lt;h2&gt;Signup Page&lt;/h2&gt;
+    &lt;p&gt;This is the Signup page where new users can register their account.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+
+
+
+
+
+
+      </section>
+
+
+      <!-- Demo Panel -->
+      <section class="panel demo-panel" aria-label="Demo panel">
+        <div class="title-bar" role="banner">
+          <div class="dots" aria-hidden="true">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+
+          <div class="file-info">
+            <img src="assets/img/html5-original.svg" alt="HTML icon">
+            <strong>frameset.html (Preview)</strong>
+          </div>
+        </div>
+
+        <div class="demo-body">
+          <iframe id="demoIframe" src="preview/index.html" title="Live preview"></iframe>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- Main Script -->
+  <script src="js/main.js"></script>
+</body>
+
 </html>
